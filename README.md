@@ -1,22 +1,22 @@
-# 🧠 DocReader AI — Local RAG System
+#  DocReader AI — Local RAG System
 
 **DocReader AI** is an offline Retrieval-Augmented Generation (RAG) system that lets users query their own data using **Ollama + LangChain + ChromaDB** — no cloud dependencies.
 
-## 🚀 Features
+##  Features
 - Runs 100% locally with **Mistral** and **Ollama**
 - Uses **Chroma** for vector storage
 - Modular structure for easy extension
 - Simple CLI interface for document Q&A
 - Future-ready for PDF, TXT, or Markdown sources
 
-## 🧩 Tech Stack
+##  Tech Stack
 - Python 3.9+
 - LangChain
 - ChromaDB
 - Ollama (Mistral model)
 - dotenv
 
-## ⚙️ Setup
+##  Setup
 ```bash
 git clone https://github.com/<your-username>/DocReaderAI.git
 cd DocReaderAI
