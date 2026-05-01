@@ -1,8 +1,12 @@
+from langchain_openai.embeddings import OpenAIEmbeddings
+from dotenv import load_dotenv
+import os
+
 def get_embedding_function():
-    # lazy import to avoid importing heavy deps during test collection
-    from embedding_functions import get_embedding_function as _get_ef
+    load_dotenv()
+    openai_api_key = os.getenv("OPENAI_API_KEY")
 
-    return _get_ef()
+    if not openai_api_key:
+        raise ValueError("❌ OPENAI_API_KEY not found in .env file")
 
-
-__all__ = ["get_embedding_function"]
+    return OpenAIEmbeddings(model="text-embedding-3-small", api_key=openai_api_key)

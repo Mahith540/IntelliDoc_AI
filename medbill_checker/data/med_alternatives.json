@@ -1,0 +1,37 @@
+{
+  "lipitor": {
+    "alternative": "Atorvastatin (generic)",
+    "estimated_monthly_savings": 45,
+    "rationale": "Generic statin equivalent with lower cash pricing at most pharmacies"
+  },
+  "crestor": {
+    "alternative": "Rosuvastatin (generic)",
+    "estimated_monthly_savings": 52,
+    "rationale": "Generic option typically lowers co-pay and cash spend"
+  },
+  "januvia": {
+    "alternative": "Sitagliptin generic/plan-preferred DPP-4",
+    "estimated_monthly_savings": 70,
+    "rationale": "Formulary-preferred alternatives can significantly reduce patient cost"
+  },
+  "humalog": {
+    "alternative": "Insulin lispro unbranded equivalent",
+    "estimated_monthly_savings": 60,
+    "rationale": "Authorized equivalents are often cheaper with comparable efficacy"
+  },
+  "eliquis": {
+    "alternative": "Apixaban generic (when available) or formulary anticoagulant",
+    "estimated_monthly_savings": 80,
+    "rationale": "Checking preferred anticoagulants can reduce monthly spend"
+  },
+  "advair": {
+    "alternative": "Generic fluticasone/salmeterol",
+    "estimated_monthly_savings": 65,
+    "rationale": "Generic combination inhalers are often cheaper"
+  },
+  "pharmacy": {
+    "alternative": "Ask for 90-day fill + mail-order pricing",
+    "estimated_monthly_savings": 20,
+    "rationale": "Longer fills and mail-order can reduce dispensing markups"
+  }
+}

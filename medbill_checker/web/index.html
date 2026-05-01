@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MedBill Checker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/web/styles.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-blur blur-a"></div>
+  <div class="bg-blur blur-b"></div>
+
+  <main class="app-shell">
+    <section class="hero-section">
+      <article class="panel hero-panel">
+        <p class="kicker">REAL-TIME MEDICAL BILL AUDIT</p>
+        <h1>MedBill Checker</h1>
+        <p class="subtitle">
+          Upload a medical bill and get a full-page audit with medication-level decisions, overcharge checks,
+          and lower-cost same-formula alternatives.
+        </p>
+
+        <form id="upload-form" class="upload-form">
+          <label class="file-input-wrap">
+            <input id="bill-file" name="bill_file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp" required>
+            <span>Select Bill (PDF or Image)</span>
+          </label>
+          <button id="analyze-btn" class="primary-btn" type="submit">Analyze Bill</button>
+          <button id="sample-btn" class="secondary-btn" type="button">Run Sample Bill</button>
+        </form>
+        <p id="selected-file" class="selected-file">No file selected yet.</p>
+        <p id="status-message" class="status-message" aria-live="polite"></p>
+
+        <div id="processing" class="processing hidden" aria-live="polite">
+          <div class="loader-stack" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="processing-text">
+            <strong>Analyzing your bill</strong>
+            <p>Running OCR, bill parsing, duplicate checks, and medication comparison across datasets.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel guide-panel">
+        <h2>What The Decisions Mean</h2>
+        <div class="meaning-grid">
+          <article class="meaning-card meaning-approved">
+            <div class="meaning-icon">OK</div>
+            <div>
+              <h3>Approved</h3>
+              <p>
+                Pricing and formulary checks are within expected range. No strong overcharge or substitution signal was found.
+              </p>
+            </div>
+          </article>
+          <article class="meaning-card meaning-review">
+            <div class="meaning-icon">!</div>
+            <div>
+              <h3>Needs Review</h3>
+              <p>
+                The line item may be overpriced, duplicated, non-preferred, or has a lower-cost same-formula alternative.
+              </p>
+            </div>
+          </article>
+        </div>
+        <p class="guide-note">
+          Note: "Needs Review" is an audit flag for billing verification and clinician confirmation, not self-medication advice.
+        </p>
+      </article>
+    </section>
+
+    <section id="result-panel" class="results-section hidden">
+      <article class="panel result-head">
+        <h2>Audit Summary</h2>
+        <p>This page expands with complete results once bill analysis finishes.</p>
+      </article>
+
+      <section class="summary-grid">
+        <article class="metric metric-billed">
+          <h3>Total Billed</h3>
+          <p id="total-billed">INR 0.00</p>
+        </article>
+        <article class="metric metric-insurance">
+          <h3>Insurance Pays</h3>
+          <p id="insurance-pays">INR 0.00</p>
+        </article>
+        <article class="metric metric-patient">
+          <h3>Patient Pays</h3>
+          <p id="patient-pays">INR 0.00</p>
+        </article>
+        <article class="metric metric-savings">
+          <h3>Potential Savings</h3>
+          <p id="savings">INR 0.00</p>
+        </article>
+      </section>
+
+      <section class="detail-grid">
+        <article class="panel">
+          <div class="section-head">
+            <h3>Medication Decisions</h3>
+            <span id="review-count" class="pill">0 items</span>
+          </div>
+          <div id="medication-status-list" class="status-list"></div>
+        </article>
+
+        <article class="panel">
+          <div class="section-head">
+            <h3>Alternative Medicines</h3>
+            <span class="pill pill-blue">Same Formula, Lower Cost</span>
+          </div>
+          <div id="alternative-list" class="alternative-list"></div>
+        </article>
+      </section>
+
+      <article class="panel summary-panel">
+        <h3>WhatsApp Summary</h3>
+        <pre id="whatsapp-summary" class="summary-box"></pre>
+      </article>
+    </section>
+  </main>
+
+  <div id="success-overlay" class="success-overlay hidden" aria-hidden="true">
+    <div class="success-card">
+      <div class="success-rings">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="success-icon">OK</div>
+      <h2>Analysis Complete</h2>
+      <p>Your bill was segmented and reviewed successfully.</p>
+    </div>
+  </div>
+
+  <script src="/web/app.js"></script>
+</body>
+</html>

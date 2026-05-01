@@ -1,0 +1,50 @@
+[
+  {
+    "id": "med_lipitor_generic",
+    "title": "Atorvastatin Generic Guidance",
+    "content": "Lipitor is a brand for atorvastatin. Generic atorvastatin is therapeutically equivalent for most statin use cases and commonly has lower patient out-of-pocket cost.",
+    "keywords": ["lipitor", "atorvastatin", "statin", "generic", "cholesterol"]
+  },
+  {
+    "id": "med_rosuvastatin_generic",
+    "title": "Rosuvastatin Cost Check",
+    "content": "Crestor is rosuvastatin brand. Generic rosuvastatin is often preferred by plans due to lower pharmacy spend with similar LDL-lowering efficacy.",
+    "keywords": ["crestor", "rosuvastatin", "generic", "statin"]
+  },
+  {
+    "id": "med_insulin_equivalent",
+    "title": "Insulin Lispro Equivalent",
+    "content": "Humalog and unbranded insulin lispro are clinically comparable in most dosing protocols. Formulary preference can significantly change patient copay.",
+    "keywords": ["humalog", "insulin", "lispro", "formulary", "copay"]
+  },
+  {
+    "id": "med_januvia_review",
+    "title": "DPP-4 Formulary Review",
+    "content": "Januvia can be expensive under some plans. Plan-preferred DPP-4 options and manufacturer savings programs should be checked to reduce cost burden.",
+    "keywords": ["januvia", "sitagliptin", "dpp-4", "formulary", "savings"]
+  },
+  {
+    "id": "med_eliquis_anticoagulant",
+    "title": "Anticoagulant Formulary Strategy",
+    "content": "Eliquis may require prior authorization. If cost is high, compare formulary anticoagulants and generic availability where approved.",
+    "keywords": ["eliquis", "apixaban", "anticoagulant", "prior authorization", "generic"]
+  },
+  {
+    "id": "med_brand_cost_flag",
+    "title": "Brand Medication Cost Flag",
+    "content": "Brand-only medication billing above market references should be reviewed for generic substitution, therapeutic interchange, and 90-day supply optimization.",
+    "keywords": ["brand", "medication", "cost", "generic", "interchange", "90-day"]
+  },
+  {
+    "id": "billing_duplicate_meds",
+    "title": "Duplicate Charge Check",
+    "content": "Repeated medication lines with similar names and close pricing can indicate duplicate billing entries and should be validated against administration records.",
+    "keywords": ["duplicate", "billing", "medication", "line item"]
+  },
+  {
+    "id": "clinical_safety_note",
+    "title": "Clinical Safety Note",
+    "content": "Any suggested medication switch must be confirmed by a licensed clinician. Cost optimization should not override clinical contraindications.",
+    "keywords": ["safety", "clinician", "contraindication", "switch"]
+  }
+]

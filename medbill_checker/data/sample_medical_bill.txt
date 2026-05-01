@@ -1,0 +1,11 @@
+CityCare Hospital Itemized Bill
+Patient: Jane Doe
+Date: 2026-02-10
+
+ER Visit Charge $350.00
+CBC Lab Test $120.00
+Lipitor 20mg Qty: 30 $95.00
+Humalog 100u/ml Qty: 2 $300.00
+Room Charge x 1 $800.00
+Pharmacy Dispensing Fee $45.00
+Total Amount Due: $1,710.00

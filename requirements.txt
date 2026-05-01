@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+pypdf
+pillow
+pytesseract
+pdf2image
+langchain
+chromadb
+pytest
+boto3
