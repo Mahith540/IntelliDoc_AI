@@ -1,4 +1,4 @@
-# IntelliDoc AI 💠
+  # IntelliDoc AI 💠
 **Next-Generation Document Intelligence & Analysis Hub**
 
 IntelliDoc AI is a powerful, locally-hosted RAG (Retrieval-Augmented Generation) system designed to ingest, process, and analyze complex documents with cinematic precision. It features a modern, responsive web interface and a robust FastAPI backend.
@@ -13,7 +13,7 @@ IntelliDoc AI is a powerful, locally-hosted RAG (Retrieval-Augmented Generation)
 
 ## 🛠 Tech Stack
 - **Backend**: FastAPI, LangChain, ChromaDB, Ollama.
-- **Frontend**: Vanilla JS, Tailwind CSS, Space Grotesk Typography.
+- **Frontend**: Vanilla JS, Tailwind CSS, Space Grotesk Typography
 - **AI Core**: Mistral (LLM), Nomic-Embed-Text (Embeddings).
 
 ## 📥 Setup & Installation
