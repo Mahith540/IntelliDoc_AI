@@ -29,9 +29,11 @@ IntelliDoc AI is a powerful, locally-hosted RAG (Retrieval-Augmented Generation)
 
 ### 2. Environment Setup
 ```bash
-# Clone the repository
+# Clone the repository \\
 git clone https://github.com/Mahith540/IntelliDoc_AI.git
 cd IntelliDoc_AI
+
+
 
 # Create a virtual environment
 python -m venv .venv
